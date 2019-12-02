@@ -123,32 +123,32 @@ rpc_palindrome/fast:
 	$(MAKE) -f CMakeFiles/rpc_palindrome.dir/build.make CMakeFiles/rpc_palindrome.dir/build
 .PHONY : rpc_palindrome/fast
 
-main.o: main.c.o
+palindrome_client.o: palindrome_client.c.o
 
-.PHONY : main.o
+.PHONY : palindrome_client.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/rpc_palindrome.dir/build.make CMakeFiles/rpc_palindrome.dir/main.c.o
-.PHONY : main.c.o
+palindrome_client.c.o:
+	$(MAKE) -f CMakeFiles/rpc_palindrome.dir/build.make CMakeFiles/rpc_palindrome.dir/palindrome_client.c.o
+.PHONY : palindrome_client.c.o
 
-main.i: main.c.i
+palindrome_client.i: palindrome_client.c.i
 
-.PHONY : main.i
+.PHONY : palindrome_client.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/rpc_palindrome.dir/build.make CMakeFiles/rpc_palindrome.dir/main.c.i
-.PHONY : main.c.i
+palindrome_client.c.i:
+	$(MAKE) -f CMakeFiles/rpc_palindrome.dir/build.make CMakeFiles/rpc_palindrome.dir/palindrome_client.c.i
+.PHONY : palindrome_client.c.i
 
-main.s: main.c.s
+palindrome_client.s: palindrome_client.c.s
 
-.PHONY : main.s
+.PHONY : palindrome_client.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/rpc_palindrome.dir/build.make CMakeFiles/rpc_palindrome.dir/main.c.s
-.PHONY : main.c.s
+palindrome_client.c.s:
+	$(MAKE) -f CMakeFiles/rpc_palindrome.dir/build.make CMakeFiles/rpc_palindrome.dir/palindrome_client.c.s
+.PHONY : palindrome_client.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... rpc_palindrome"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... palindrome_client.o"
+	@echo "... palindrome_client.i"
+	@echo "... palindrome_client.s"
 .PHONY : help
 
 

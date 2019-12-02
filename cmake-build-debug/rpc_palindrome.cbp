@@ -78,7 +78,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/segni/CLionProjects/rpc-palindrome/main.c">
+		<Unit filename="/home/segni/CLionProjects/rpc-palindrome/palindrome_client.c">
 			<Option target="rpc_palindrome"/>
 		</Unit>
 		<Unit filename="/home/segni/CLionProjects/rpc-palindrome/CMakeLists.txt">

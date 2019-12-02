@@ -57,27 +57,27 @@ include CMakeFiles/rpc_palindrome.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/rpc_palindrome.dir/flags.make
 
-CMakeFiles/rpc_palindrome.dir/main.c.o: CMakeFiles/rpc_palindrome.dir/flags.make
-CMakeFiles/rpc_palindrome.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/segni/CLionProjects/rpc-palindrome/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/rpc_palindrome.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rpc_palindrome.dir/main.c.o   -c /home/segni/CLionProjects/rpc-palindrome/main.c
+CMakeFiles/rpc_palindrome.dir/palindrome_client.c.o: CMakeFiles/rpc_palindrome.dir/flags.make
+CMakeFiles/rpc_palindrome.dir/palindrome_client.c.o: ../palindrome_client.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/segni/CLionProjects/rpc-palindrome/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/rpc_palindrome.dir/palindrome_client.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/rpc_palindrome.dir/palindrome_client.c.o   -c /home/segni/CLionProjects/rpc-palindrome/palindrome_client.c
 
-CMakeFiles/rpc_palindrome.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rpc_palindrome.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/segni/CLionProjects/rpc-palindrome/main.c > CMakeFiles/rpc_palindrome.dir/main.c.i
+CMakeFiles/rpc_palindrome.dir/palindrome_client.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rpc_palindrome.dir/palindrome_client.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/segni/CLionProjects/rpc-palindrome/palindrome_client.c > CMakeFiles/rpc_palindrome.dir/palindrome_client.c.i
 
-CMakeFiles/rpc_palindrome.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rpc_palindrome.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/segni/CLionProjects/rpc-palindrome/main.c -o CMakeFiles/rpc_palindrome.dir/main.c.s
+CMakeFiles/rpc_palindrome.dir/palindrome_client.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rpc_palindrome.dir/palindrome_client.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/segni/CLionProjects/rpc-palindrome/palindrome_client.c -o CMakeFiles/rpc_palindrome.dir/palindrome_client.c.s
 
 # Object files for target rpc_palindrome
 rpc_palindrome_OBJECTS = \
-"CMakeFiles/rpc_palindrome.dir/main.c.o"
+"CMakeFiles/rpc_palindrome.dir/palindrome_client.c.o"
 
 # External object files for target rpc_palindrome
 rpc_palindrome_EXTERNAL_OBJECTS =
 
-rpc_palindrome: CMakeFiles/rpc_palindrome.dir/main.c.o
+rpc_palindrome: CMakeFiles/rpc_palindrome.dir/palindrome_client.c.o
 rpc_palindrome: CMakeFiles/rpc_palindrome.dir/build.make
 rpc_palindrome: CMakeFiles/rpc_palindrome.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/segni/CLionProjects/rpc-palindrome/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable rpc_palindrome"

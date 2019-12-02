@@ -6,14 +6,32 @@
 
 #include "palindrome.h"
 
-int *
-is_palindrome_1_svc(word *argp, struct svc_req *rqstp)
-{
-	static int  result;
+int *is_palindrome_1_svc(word *argp, struct svc_req *rqstp) {
+    static int result;
 
-	/*
-	 * insert server code here
-	 */
+    result = check_palindrome(argp->word);
 
-	return &result;
+    return &result;
+}
+
+int check_palindrome(char *string) {
+
+    char *ptr, *rev;
+    ptr = string;
+
+    while (*ptr != '\0') {
+        ++ptr;
+    }
+    --ptr;
+    for (rev = string; ptr >= rev;) {
+        if (*ptr == *rev) {
+            --ptr;
+            rev++;
+        } else
+            break;
+    }
+    if (rev > ptr)
+        return 1;
+
+    return 0;
 }

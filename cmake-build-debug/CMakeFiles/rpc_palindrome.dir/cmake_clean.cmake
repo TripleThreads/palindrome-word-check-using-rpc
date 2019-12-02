@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rpc_palindrome.dir/main.c.o"
+  "CMakeFiles/rpc_palindrome.dir/palindrome_client.c.o"
   "rpc_palindrome"
   "rpc_palindrome.pdb"
 )

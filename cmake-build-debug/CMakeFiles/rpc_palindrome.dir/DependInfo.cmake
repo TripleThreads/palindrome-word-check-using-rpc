@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/segni/CLionProjects/rpc-palindrome/main.c" "/home/segni/CLionProjects/rpc-palindrome/cmake-build-debug/CMakeFiles/rpc_palindrome.dir/main.c.o"
+  "/home/segni/CLionProjects/rpc-palindrome/palindrome_client.c" "/home/segni/CLionProjects/rpc-palindrome/cmake-build-debug/CMakeFiles/rpc_palindrome.dir/palindrome_client.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
