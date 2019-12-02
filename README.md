@@ -1,4 +1,4 @@
 # palindrome-word-check-using-rpc
-make -f Makefile.palindrome
-sudo ./palindrome_server
-sudo ./palindrome_client <server address> word
+1. make -f Makefile.palindrome
+2. sudo ./palindrome_server
+3. sudo ./palindrome_client <server address> word
