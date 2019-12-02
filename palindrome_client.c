@@ -6,43 +6,42 @@
 
 #include "palindrome.h"
 
-void add_prog_1(char *host, char *input) {
-    CLIENT *clnt;
-    int *result_1;
-    word add_1_arg;
 
-#ifndef    DEBUG
-    clnt = clnt_create(host, ADD_PROG, ADD_VERS, "udp");
-    if (clnt == NULL) {
-        clnt_pcreateerror(host);
-        exit(1);
-    }
-#endif    /* DEBUG */
-    add_1_arg.word = input;
-    result_1 = add_1(&add_1_arg, clnt);
-    if (result_1 == (int *) NULL) {
-        clnt_perror(clnt, "call failed");
-    } else { // if everything is fine by now we will have the response
-        if (*result_1 == 1)
-            printf("YES! It is palindrome\n");
-        else if (*result_1 == 0)
-            printf("NO! it is not palindrome\n");
-    }
+void
+add_prog_1(char *host)
+{
+	CLIENT *clnt;
+	int  *result_1;
+	word  is_palindrome_1_arg;
 
-#ifndef    DEBUG
-    clnt_destroy (clnt);
-#endif     /* DEBUG */
+#ifndef	DEBUG
+	clnt = clnt_create (host, ADD_PROG, ADD_VERS, "udp");
+	if (clnt == NULL) {
+		clnt_pcreateerror (host);
+		exit (1);
+	}
+#endif	/* DEBUG */
+
+	result_1 = is_palindrome_1(&is_palindrome_1_arg, clnt);
+	if (result_1 == (int *) NULL) {
+		clnt_perror (clnt, "call failed");
+	}
+#ifndef	DEBUG
+	clnt_destroy (clnt);
+#endif	 /* DEBUG */
 }
 
 
-int main(int argc, char *argv[]) {
-    char *host;
+int
+main (int argc, char *argv[])
+{
+	char *host;
 
-    if (argc < 3) {
-        printf("usage: %s server_host small number of arguments\n", argv[0]);
-        exit(1);
-    }
-    host = argv[1];
-    add_prog_1(host, argv[2]);
-    exit(0);
+	if (argc < 2) {
+		printf ("usage: %s server_host\n", argv[0]);
+		exit (1);
+	}
+	host = argv[1];
+	add_prog_1 (host);
+exit (0);
 }

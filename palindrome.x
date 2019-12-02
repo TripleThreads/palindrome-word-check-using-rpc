@@ -4,6 +4,6 @@ struct word{
 
 program ADD_PROG{
     version ADD_VERS{
-        int add(word)=1;
+        int is_palindrome(word)=1;
     }=1;
 }=0x123456;
