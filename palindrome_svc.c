@@ -17,7 +17,7 @@
 #endif
 
 static void
-add_prog_1(struct svc_req *rqstp, register SVCXPRT *transp)
+palindrome_program_1(struct svc_req *rqstp, register SVCXPRT *transp)
 {
 	union {
 		word is_palindrome_1_arg;
@@ -62,15 +62,15 @@ main (int argc, char **argv)
 {
 	register SVCXPRT *transp;
 
-	pmap_unset (ADD_PROG, ADD_VERS);
+	pmap_unset (Palindrome_program, Palindrome_version);
 
 	transp = svcudp_create(RPC_ANYSOCK);
 	if (transp == NULL) {
 		fprintf (stderr, "%s", "cannot create udp service.");
 		exit(1);
 	}
-	if (!svc_register(transp, ADD_PROG, ADD_VERS, add_prog_1, IPPROTO_UDP)) {
-		fprintf (stderr, "%s", "unable to register (ADD_PROG, ADD_VERS, udp).");
+	if (!svc_register(transp, Palindrome_program, Palindrome_version, palindrome_program_1, IPPROTO_UDP)) {
+		fprintf (stderr, "%s", "unable to register (Palindrome_program, Palindrome_version, udp).");
 		exit(1);
 	}
 
@@ -79,8 +79,8 @@ main (int argc, char **argv)
 		fprintf (stderr, "%s", "cannot create tcp service.");
 		exit(1);
 	}
-	if (!svc_register(transp, ADD_PROG, ADD_VERS, add_prog_1, IPPROTO_TCP)) {
-		fprintf (stderr, "%s", "unable to register (ADD_PROG, ADD_VERS, tcp).");
+	if (!svc_register(transp, Palindrome_program, Palindrome_version, palindrome_program_1, IPPROTO_TCP)) {
+		fprintf (stderr, "%s", "unable to register (Palindrome_program, Palindrome_version, tcp).");
 		exit(1);
 	}
 

@@ -19,20 +19,20 @@ struct word {
 };
 typedef struct word word;
 
-#define ADD_PROG 0x123456
-#define ADD_VERS 1
+#define Palindrome_program 0x123456
+#define Palindrome_version 1
 
 #if defined(__STDC__) || defined(__cplusplus)
 #define is_palindrome 1
 extern  int * is_palindrome_1(word *, CLIENT *);
 extern  int * is_palindrome_1_svc(word *, struct svc_req *);
-extern int add_prog_1_freeresult (SVCXPRT *, xdrproc_t, caddr_t);
+extern int palindrome_program_1_freeresult (SVCXPRT *, xdrproc_t, caddr_t);
 
 #else /* K&R C */
 #define is_palindrome 1
 extern  int * is_palindrome_1();
 extern  int * is_palindrome_1_svc();
-extern int add_prog_1_freeresult ();
+extern int palindrome_program_1_freeresult ();
 #endif /* K&R C */
 
 /* the xdr functions */
